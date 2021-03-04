@@ -1,0 +1,149 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.container::after {
+    content: "";
+    width: 960px;
+    clear: both;
+    display: table;
+}
+body {
+    margin: 100px 300px;
+    padding: 30px;
+}
+
+/*HEADER*/
+nav,
+h1 {
+    width: 960px;
+    margin: 0 auto;
+}
+h1 {
+ font-size: 40px;
+}
+
+nav::before {
+    content: "";
+    display: block;
+    height: 50px;
+    width: 60%;
+    background-color: rgb(39, 38, 38);
+    background-image: linear-gradient( rgb( 160, 160, 160), black);
+    position: absolute;
+    z-index: -1;
+}
+.main-menu ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    height: 50px;
+    font-size: 20px;
+}
+
+.main-menu li {
+    float: left;
+}
+
+.main-menu ul li a {
+    color: white;
+    display: block;
+    height: 50px;
+    padding: 0 30px;
+    text-transform: capitalize;
+    text-decoration: none;
+    line-height: 50px;
+}
+
+.main-menu ul li a:hover {
+    background-color: rgb(41, 37, 37);
+}
+
+/*SIDEBAR*/
+.vertical-menu {
+    width: 200px;
+    margin: 30px 0px 50px 0px;
+    float: left;
+    display: block;
+}
+.vertical-menu a:hover {
+    content: "";
+    font-weight: bolder;
+    padding-left: 15px;
+   }
+
+.vertical-menu ul {
+    list-style: none;
+}
+
+.vertical-menu li {
+    list-style: none;
+    display: block;
+    line-height: 32px;
+    height: 32px;
+    margin: 7px 0;
+    width: 206px;
+}
+
+.vertical-menu li a {
+    display: block;
+    height: 33px;
+    text-transform: capitalize;
+    font-size: 16px;
+    line-height: 32px;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    background: white;
+    border: solid 1px black;
+}
+
+/*CONTENT*/
+.content {
+    margin: 17px 0px 50px 40px;
+    padding: 20px;
+    float: left;
+    width: 300px;
+}
+img {
+    width: 180%;
+    border: 1px solid black;
+    padding: 34px;
+}
+.content p {
+    width: 600px;
+    margin: 30px 0px;
+    display: inline-block;
+}
+
+/*FOOTER*/
+nav.footer-menu::before {
+    background-color: rgb(184, 179, 179);
+    background-image: none;
+}
+.footer-menu li:hover {
+    text-decoration: underline;
+}
+
+.footer-menu ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    height: 50px;
+}
+
+.footer-menu li {
+    float: left;
+}
+.rights {
+    margin-left: 230px;
+}
+.footer-menu ul li a {
+    color: black;
+    display: block;
+    height: 50px;
+    padding: 0 30px;
+    text-transform: capitalize;
+    text-decoration: none;
+    line-height: 50px;
+}
